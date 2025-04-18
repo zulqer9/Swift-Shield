@@ -47,14 +47,15 @@ Ideal for:
 # 1. Clone the repo
 git clone https://github.com/zulqer9/Swift-Shield.git
 
-# 2. Navigate inside
+# 2. Navigate into the project folder
 cd Swift-Shield
 
-# 3. Compile everything
-javac src/*.java
+# 3. Compile the Java files (outputs to 'out' directory)
+javac -d out src/*.java
 
-# 4. Run the program
-java src.Main
+# 4. Run the program (using the correct package name)
+java -cp out Project.Main
+
 ```
 
 ---
