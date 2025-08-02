@@ -1,0 +1,65 @@
+{
+  "application": {
+    "name": "Swift Shield",
+    "version": "2.0.0",
+    "profile": "development"
+  },
+  "ui": {
+    "colors": {
+      "primary": "\u001B[38;5;46m",
+      "secondary": "\u001B[38;5;129m",
+      "accent": "\u001B[36m",
+      "success": "\u001B[38;5;46m",
+      "warning": "\u001B[33m",
+      "error": "\u001B[31m",
+      "info": "\u001B[34m",
+      "reset": "\u001B[0m",
+      "bold": "\u001B[1m"
+    },
+    "themes": {
+      "default": {
+        "welcome": [
+          "\u001B[38;5;93m",
+          "\u001B[38;5;129m",
+          "\u001B[38;5;165m",
+          "\u001B[38;5;171m",
+          "\u001B[38;5;177m",
+          "\u001B[38;5;183m",
+          "\u001B[38;5;189m",
+          "\u001B[38;5;201m"
+        ]
+      }
+    }
+  },
+  "security": {
+    "passwordPolicies": {
+      "default": {
+        "minLength": 12,
+        "maxLength": 128,
+        "requireUppercase": true,
+        "requireLowercase": true,
+        "requireNumbers": true,
+        "requireSpecialChars": true,
+        "forbiddenPatterns": ["123456", "password", "qwerty"],
+        "minEntropy": 50
+      },
+      "enterprise": {
+        "minLength": 14,
+        "maxLength": 256,
+        "requireUppercase": true,
+        "requireLowercase": true,
+        "requireNumbers": true,
+        "requireSpecialChars": true,
+        "forbiddenPatterns": ["123456", "password", "qwerty", "admin"],
+        "minEntropy": 60
+      }
+    }
+  },
+  "features": {
+    "clipboardIntegration": true,
+    "passwordHistory": false,
+    "strengthAnalysis": true,
+    "securityHandbook": true,
+    "exportOptions": ["text", "json"]
+  }
+}
